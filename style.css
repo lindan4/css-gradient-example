@@ -2,6 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  padding: 10px 0px;
 }
 
 .grade-div {
@@ -35,8 +36,25 @@ main {
   background: radial-gradient(circle at top left, #a1c4fd, #e4e8ea);
 }
 
-.conic-gradient-one {
+.conic-gradient {
   background: conic-gradient(from 0deg, red, yellow, green, blue, red);
+}
+
+.mutliple-linear-gradient {
+  background: linear-gradient(
+        to bottom right,
+        #1478f2 9%,
+        #1478f2 61%,
+        #eef4ff 100%
+      )
+      bottom right,
+    linear-gradient(to bottom left, #1478f2 9%, #1478f2 61%, #eef4ff 100%)
+      bottom left,
+    linear-gradient(to top left, #1478f2 9%, #1478f2 61%, #eef4ff 100%) top left,
+    linear-gradient(to top right, #1478f2 9%, #1478f2 61%, #eef4ff 100%) top
+      right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .gradient-button {
